@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    tools:context="com.example.oryossipof.alphahotal.questionnairesActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:gravity="left"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:textSize="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Questionanaires" />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/textView5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="what is your origin?"
+        />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+        <EditText
+            android:id="@+id/originText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="your origin"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="What is your age?"
+        />
+
+
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+
+
+            >
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/under15bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="under 15" />
+
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/over15bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="over 15" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="What is your gender?"
+
+            />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/malebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:layout_marginLeft="90dp"/>
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/femalebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:layout_marginLeft="50dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/textView3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you a vegeterian?"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="20sp"
+        android:textAlignment="center">
+
+<RadioGroup
+    android:id="@+id/group3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/vegNobt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="no" />
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/vegYesbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:layout_marginLeft="140dp"/>
+
+</RadioGroup>
+    </LinearLayout>
+
+
+        <TextView
+
+            android:id="@+id/textView4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you vegan?"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+<RadioGroup
+    android:id="@+id/group4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/veganNobt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no"
+            android:layout_marginLeft="15dp"/>
+
+
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/veganYesbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:layout_marginLeft="140dp"/>
+
+
+
+</RadioGroup>
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you married?"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<RadioGroup
+    android:id="@+id/group5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/marriedNobt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="no" />
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/marriedYesbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:layout_marginLeft="140dp"/>
+
+</RadioGroup>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you have children?"
+            android:textSize="20dp"
+            android:textAlignment="center"
+             />
+
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+<RadioGroup
+    android:id="@+id/group6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/childrenNobt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="no" />
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/childrenYesbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:layout_marginLeft="140dp"/>
+
+
+</RadioGroup>
+    </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your trip is for?"
+            android:textAlignment="center"
+            android:textSize="20sp"
+          />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+<RadioGroup
+    android:id="@+id/group7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/pleasurebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pleasure"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:id="@+id/bussinessbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="business"
+            android:layout_marginLeft="120dp"/>
+
+</RadioGroup>
+
+
+    </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/textView9"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Part of a group?"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+<RadioGroup
+    android:id="@+id/group8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+            <RadioButton
+                android:button="@null"
+                android:drawableLeft="@android:drawable/btn_radio"
+                android:id="@+id/groupNobt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:layout_marginLeft="15dp"/>
+
+            <RadioButton
+                android:button="@null"
+                android:drawableLeft="@android:drawable/btn_radio"
+                android:id="@+id/groupYesbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes"
+                android:layout_marginLeft="140dp"/>
+
+
+</RadioGroup>
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/validationerr"
+            android:visibility = "invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you must fill all fields!"
+            android:textColor="#ff0000"
+            android:gravity="center"
+
+            />
+        <Button
+            android:gravity="center"
+            android:id="@+id/sendbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SEND"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+

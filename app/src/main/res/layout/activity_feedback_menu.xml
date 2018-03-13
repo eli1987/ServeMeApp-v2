@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background= "#242424"
+tools:context="com.example.oryossipof.alphahotal.FeedbackMenuActivity">
+
+<TextView
+    android:textColor="#fff"
+    android:layout_gravity="center"
+    android:layout_width="368dp"
+    android:layout_height="wrap_content"
+    android:text="@string/Feedback_str"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp" />
+
+<ListView
+    android:id="@+id/lv_housekeeping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="56dp"
+    tools:layout_editor_absoluteX="8dp">
+
+</ListView>
+
+</LinearLayout>

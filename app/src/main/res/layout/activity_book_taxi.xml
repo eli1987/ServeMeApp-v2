@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Book_a_Texi_str"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/areatextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="@string/Destination_str"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:typeface="monospace"
+        />
+
+
+    <Spinner
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner_ip"
+        android:spinnerMode="dropdown"
+        android:entries="@array/myarray"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Number_of_passengers_str"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:typeface="monospace"
+        />
+
+    <Spinner
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner_Number_of_pass"
+        android:spinnerMode="dropdown"
+        android:entries="@array/passArray"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Date_str"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:typeface="monospace"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DatePick"
+        android:clickable="true"
+        android:editable="false"
+        android:hint="@string/Date_str"
+        android:focusable="false"
+        android:textColorHint="#fff"/>
+
+    <TextView
+        android:id="@+id/TimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_time_str"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_view_edit"
+        android:hint="20:00"
+        android:editable="false"
+        android:focusable="false"
+        android:textColorHint="#fff"
+        />
+
+
+    <Button
+        android:id="@+id/BookTexi_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order" />
+
+</LinearLayout>
